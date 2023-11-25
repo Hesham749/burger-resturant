@@ -1,0 +1,277 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 1px 8Px rgba(128, 128, 128, 0.714);
+    z-index: 2;
+    padding: 0 1%;
+    
+}
+
+nav ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    display: block;
+    text-align: right;
+    width: 47%;
+    
+
+    
+
+
+}
+ul li {
+    display: inline-block;
+
+}
+a{
+    text-decoration: none;
+    width: max-content;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    padding: .7rem 1rem;
+    
+
+
+}
+.nav-left{
+    width: 47%;
+}
+#top{
+    position: relative;
+    height: fit-content;
+    margin-bottom: 1rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#top >img{
+    display: block;
+    width: 100%;
+}
+#top >h2{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    margin-bottom: 23px;
+    color: rgb(94, 92, 92);
+    font-weight: 400;
+
+}
+h2{
+    letter-spacing: .25rem;
+    font-size: 2.3rem;
+    font-weight: 100;
+
+}
+#about{
+    width: 65%;
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    gap: 20px;
+    padding: 5% 0%;
+    border-bottom: .3px solid rgba(128, 128, 128, 0.432);
+}
+.about-right{
+    flex: 1;
+    text-align: center;
+}
+.about-left{
+    padding: 0;
+    flex: 1;
+    position: relative;
+    border-radius: 4px;
+}
+.gray1{
+    height: 620px;
+    background-color: rgba(0, 0, 0, 0.577);
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: 40%;
+    border-radius: 4px;
+
+
+}
+.about-left img{
+    border-radius: 4px;
+    width: 100%;
+    height: 620px;
+}
+.about-right p {
+    text-align: left;
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    overflow-wrap: wrap;
+}
+.about-right :nth-child(2) {
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 100%;
+}
+.about-right :nth-child(4) {
+    color: grey;
+}
+span{
+    display: inline-block;
+    background-color: rgba(229, 226, 226, 0.673);
+    padding: 2px 6px;
+}
+#menu{
+    width: 65%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1rem ;
+    gap: 20px;
+    padding: 8% 2%;
+    border-bottom: .3px solid rgba(128, 128, 128, 0.432);
+    text-align: left;
+
+}
+#menu :is(.right , .left){
+    flex: 1;
+    position: relative;
+
+} 
+
+.gray2{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.577);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    opacity: 40%;
+    border-radius: 4px;
+
+}
+
+.right img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.left h2{
+    text-align: center;
+}
+.left h4{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
+.left p{
+    font-weight: lighter;
+    /* font-size: 1.2rem; */
+    color: gray;
+    margin-bottom: 4rem;
+}
+#contact{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding: 5% 2%;
+    text-align: left;
+}
+
+#contact h4 {
+    color: rgba(17, 85, 85, 0.682);
+    font-size: 1.1rem;
+}
+input{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0;
+    border-style: none;
+    border-bottom: .3px solid rgba(128, 128, 128, 0.432);
+    font-size: .9rem;
+    padding-left: 1rem;
+}
+button{
+    display: block;
+    font-size: .9rem;
+    margin: 2rem 0;
+    background-color: rgba(238, 238, 238, 0.612);
+    padding: .7rem 1rem;
+    border-style: none;
+    cursor: pointer;
+}
+button:hover , a:hover{
+    background-color: rgba(128, 128, 128, 0.432);
+}
+
+footer{
+    background-color:rgba(238, 238, 238, 0.612) ;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    text-align: center;
+    
+}
+@media screen and (max-width:600px) {
+    #menu ,#contact , #about {
+        flex-direction: column;
+        width: 98%;
+    }
+    nav ul , .about-left {
+        display: none;
+    }
+    .nav-left{
+        width: 100%;
+    }
+    #top{
+        width: 100%;
+    }
+    .gray2{
+        display: none;
+    }
+    #top >h2{
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (min-width:661px) and (max-width:992px) {
+    #top{
+        width: 100%;
+    }
+    #about , #menu , #contact {
+        width: 98%;
+    }
+    #menu{
+        flex-direction: column;
+    }
+    .gray2{
+        bottom: 2px;
+
+    }
+}
